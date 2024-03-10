@@ -1,16 +1,55 @@
 .logo{
-    height: 35px;
-    width: 35px;
+    height: 33px;
+    width: 33px;
+    /* padding-bottom: ; */
 }
 ul li{
     color: white;
 }
 #first{
-    background-color: black;
+    /* background-color: black; */
     text-align: center;
     display: flex;
-      flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: left;
+    width: 200px;
+    padding-left: 200px;
+    height: 100%;
+    /* padding-right: 50px; */
     
+}
+.side{
+    background-color: black;
+    width: 400px;
+    align-items: center;
+    height: 100%;
+}
+.grok{
+    height: 30px;
+    width: 30px;
+}
+.grok-item{
+    display: flex;
+    align-items: center;
+}
+.tnav ul li{
+    padding: 12px;
+}
+.tnav{
+    margin-top: 10px;
+    font-family: inherit;
+    font-size: medium;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+.post{
+    background-color: rgb(29, 155, 240);
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 9999px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 18px;
 }
