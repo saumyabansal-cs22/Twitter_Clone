@@ -38,7 +38,6 @@ li:hover, .user:hover{
     margin-top: 10px;
     font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-family: inherit;
-    font-size: medium;
     font-weight: 400;
     font-size: 20px;
 
@@ -78,6 +77,7 @@ li:hover, .user:hover{
 .names{ 
     color: white;
     text-align: left;
+    
 }
 
 
@@ -91,10 +91,44 @@ li:hover, .user:hover{
 
 /* ===================================================================== */
 .second{
-background-color: rgb(151, 88, 88);
+/* background-color: rgb(151, 88, 88); */
 width: 600px;
 margin-left: 405px;
 height: 100vh;
+border: 1px solid rgba(245, 245, 245, 0.401);
+}
+.top{
+    background-color: black;
+    justify-content: space-between;
+    color: white;
+    height: 50px;
+    /* width: 600px; */
+    align-items: center;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.401);;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    /* position: fixed; */
+}
+.settings{
+    width: 50px;
+}
+.for{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.for p, .settings span{
+    margin: 10px;
+}
+.for:hover, .settings:hover{
+    background-color: #f0f0f020;
+    transition: background-color 0.3s ease; 
+    cursor: pointer;
+}
+.settings{
+    text-align: center;
 }
 
 /* ======================================================================== */
@@ -131,10 +165,14 @@ height: 100vh;
     color: white;
     font-weight: 600;
     width: 348px;
-    margin: 20px;
+    margin: 10px 20px 10px ;
     border-radius: 20px;
     text-align: justify;
     padding: 10px 20px;
+}
+.subscribe{
+    margin-top: 64px;
+    justify-content: space-between;
 }
 .whats{
     display: flex;
@@ -154,4 +192,23 @@ height: 100vh;
 .sb{
     width: 100px;
     font-size: 15px;
+    margin-top: 10px;
+    height: 35px;
+}
+.uf{
+    margin-top: 15px;
+}
+.namess{
+    color: white;
+    text-align: left;
+    margin-left: 10px;
+}
+.fb{
+    background-color: white;
+    color: black;
+    width: 80px;
+    text-align: center;
+    height: 30px;
+    margin-left : 50px;
+    margin-top: 10px;
 }
