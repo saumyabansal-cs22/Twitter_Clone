@@ -56,7 +56,7 @@ li:hover, .user:hover{
     font-family: inherit;
     font-weight: 700;
 }
-.post:hover{
+.post:hover,.sb:hover{
     background-color: rgba(41, 139, 205, 0.953);
     transition: background-color 0.3s ease;
 }
@@ -91,25 +91,27 @@ li:hover, .user:hover{
 
 /* ===================================================================== */
 .second{
-/* background-color: rgb(151, 88, 88); */
+    display: flex;
+    flex-direction: column;
 width: 600px;
 margin-left: 405px;
-height: 100vh;
+height: 100%;
 border: 1px solid rgba(245, 245, 245, 0.401);
 }
 .top{
     background-color: black;
+    backdrop-filter: blur(4px);
     justify-content: space-between;
     color: white;
     height: 50px;
-    /* width: 600px; */
+    width: 598px;
     align-items: center;
     border-bottom: 1px solid rgba(245, 245, 245, 0.401);;
     font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    /* position: fixed; */
+    position: fixed;
 }
 .settings{
     width: 50px;
@@ -127,8 +129,49 @@ border: 1px solid rgba(245, 245, 245, 0.401);
     transition: background-color 0.3s ease; 
     cursor: pointer;
 }
-.settings{
+.settings{ 
     text-align: center;
+}
+.posthead,.userpost{
+    display: flex;
+}
+.userpost{
+    padding: 10px;
+    border-top: 1px solid rgba(245, 245, 245, 0.401);
+    border-bottom: 1px solid rgba(245, 245, 245, 0.401);;
+    
+}
+.userpost:hover{
+    opacity: 0.8;
+}
+.namep{
+    display: flex;
+    width: 70%;
+}
+.namep div{
+    padding-left: 10px;
+}
+.posting{
+    text-align: left;
+    width: 92%;
+}
+.postimg img{
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.reaction ul{
+    /* color:rgba(245, 245, 245, 0.401); */
+    display: flex;
+    justify-content: space-between;
+}
+.sathmein ul li{
+    padding-left: 5px;
+}
+.reaction ul li{
+    color:rgba(245, 245, 245, 0.401);
 }
 
 /* ======================================================================== */
@@ -136,6 +179,20 @@ border: 1px solid rgba(245, 245, 245, 0.401);
     display: flex;
     flex-direction: column;
     width: 30%;
+    height: 100vh;
+    overflow-y: auto;
+    position: fixed;
+    margin-left: 1000px;
+}
+
+.third::-webkit-scrollbar{
+    width: 10px;
+}
+.third::-webkit-scrollbar-track{
+    background: white;
+}
+.third::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom, rgb(63, 112, 210), rgb(0, 255, 251));
 }
 .searchbox{
     width: 348px;
@@ -211,4 +268,9 @@ border: 1px solid rgba(245, 245, 245, 0.401);
     height: 30px;
     margin-left : 50px;
     margin-top: 10px;
+}
+
+/* //--------------------------responsiveness----------------------- */
+@media screen {
+    
 }
